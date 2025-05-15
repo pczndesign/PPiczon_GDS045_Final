@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>On One Dance Studio</title>
+  <style>
+    /* Font Face Declarations */
+    @font-face {
+      font-family: 'BrandonGrotesque';
+      src: url(Font/Brandon_reg.otf) format('opentype');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'BrandonGrotesque';
+      src: url(Font/Brandon_med.otf) format('opentype');
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'BrandonGrotesque';
+      src: url(Font/Brandon_bld.otf) format('opentype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'BrandonGrotesque';
+      src: url('/fonts/BrandonGrotesque-Italic.otf') format('opentype');
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    /* Base Styles */
+    body {
+      font-family: 'BrandonGrotesque', sans-serif;
+      line-height: 1.6;
+      color: #222;
+      padding: 2rem;
+      background-color: #fafafa;
+    }
+
+    /* Typography */
+    a {
+      text-decoration: none;
+    }
+
+    h1 {
+      font-size: 3rem;         
+      margin-top: 5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 2.2rem;         
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 1.3rem;           
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      font-weight: normal;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      max-width: 100%;
+    }
+
+    ul {
+      padding-left: 2rem;
+    }
+
+    .content-section {
+      padding: 0 2rem;
+    }
+
+    /* Navigation */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.1rem 2rem;
+      background-color: #F9F9F9;
+      color: #000;
+    }
+
+    .logo img {
+      max-height: 10vw;
+      width: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 3rem;
+    }
+
+    .nav-links a {
+      font-family: 'BrandonGrotesque', sans-serif;
+      font-weight: 500;
+      text-decoration: none;
+      color: #000;
+      font-size: 20px;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #91292A;
+    }
+
+    /* Hero Section */
+    .hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* About Section */
+    .about-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      padding-top: 4em;
+    }
+
+    .about-img img {
+        max-width: 100%;
+    }
+
+    .line {
+      margin: 3rem 0;
+      border: 0;
+      height: 1px;
+      background-color: #ddd;
+    }
+
+    /* Footer */
+    .site-footer {
+      background-color: #F9F9F9;
+      color: #000;
+      padding: 2rem;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 2000px;
+      margin: 0 auto;
+      gap: 2rem;
+    }
+
+    .footer-column {
+      flex: 1 1 200px;
+    }
+
+    .footer-column h4 {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-family: 'BrandonGrotesque', sans-serif;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-column ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-column ul a {
+      color: #000;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .footer-column ul a:hover {
+      text-decoration: underline;
+      color: #91292A;
+    }
+
+    .footer-branding {
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .footer-branding img {
+      max-height: 100px;
+      width: auto;
+    }
+
+    .copyright {
+      font-size: 0.8rem;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      .nav-links {
+        gap: 1.5rem;
+      }
+      
+      .logo img {
+        height: 150px;
+      }
+      
+      .footer-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-branding {
+        text-align: center;
+        align-items: center;
+      }
+    }
+    
+
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="/index.html" class="logo">
+      <img src="IMG/OOSLogo_Black_transparent-1.png" alt="On One Studios Logo">
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="programs.html">Programs</a>
+      <a href="instuctors.html">Instructors</a>
+      <a href="rentals.html">Rentals</a>
+      <a href="about.html">About</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <img src="IMG/About.png" alt="Backside of Dancer wearing OOS Merch">
+  </div>
+
+  <!-- Content Section -->
+  <div class="content-section">
+    <h1>Building the Bridge</h1>
+    <p>Dance is a bridge that connects people from all walks of life. Dance enriches lives and creates bonds, regardless of age, gender, background or ethnicity. 
+      Six years ago, we started with a dream: to create a place where people could learn, share, and grow through dance. A place where people could escape the 
+      monotony and mundane-ness of real life, and enter a world of creativity, safety, and most importantly, fun. With that in mind, we created Monday Night 
+      Workshop.</p>
+    <p>Monday Night Workshop is the product of six years of fervent ambition and continuous hard work. It is the product of an unwavering love of dance. Monday Night
+      Workshop is, quite simply, the embodiment of our passion and dreams. In our time as an organization, we've hosted quality dance workshops in the Bay Area, 
+      every Monday. We've been able bring out some of the most passionate and talented dancers in the world, and through the community's support, we've established
+      ourselves as the Bay Area's premier dance organization.</p>
+    <p>We want to go further. We want to give the Bay a place where they can receive the best in dance, in a friendly and welcoming environment--every day of the 
+      week. We want to create, a home to everything we've believed in for the past six years. Monday Night Workshop's On One Dance Studio will be the Bay Area's 
+      premier dance studio. It will be an environment of creativity and safety, diversity and fun. A place where anyone, regardless of age or skill level, can learn
+      something new and find joy in dance.</p>
+
+    <!-- About Image -->
+    <div class="about-img">
+      <img src="IMG/About_img2.png" alt="Dance Studio Image">
+    </div>
+
+    <h1>A Studio with a Strong Foundation</h1>
+    <p>On One Dance Studio will be built upon everything Monday Night Workshop has striven to promote in the past six years:</p>
+    <ul>
+      <li>Bridging the gap of diversity: Dance should be a positive, community-building activity. It doesn't matter what you look like or have experience in, dance 
+        is a universal language everyone should have access to. On One Dance Studio will be a safe haven for anyone and everyone who wants to learn about dance.</li>
+      <li>Commitment to quality: Time is precious, and the time you set aside in your busy schedule to spend with us, should be valuable and worthwhile. We invite 
+        choreographers that we believe have something unique to spread to others. The choreographers we book are passionate and dedicated to spreading the joy and 
+        positivity that comes with dance. On One Dance Studio will be dedicated to providing the best possible atmosphere for our students.</li>
+      <li>Growth through hard work: To us, a dance class is a place of growth. A place where students are able to challenge themselves while growing at their own 
+        pace. We believe in hard work and fun for people of all ages--whether it's your first class or your 50th.</li>
+    </ul>
+  </div>
+
+  <hr class="line">
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="instuctors.html">Instructors</a></li>
+          <li><a href="rentals.html">Rentals</a></li>
+          <li><a href="about.html">About</a></li>
+          </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/ononestudios/">Instagram</a></li>
+          <li><a href="https://www.youtube.com/@OnOneStudiosMedia">Youtube</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-column footer-branding">
+        <div class="logo">
+          <img src="IMG/OOSLogo_Black_transparent-1.png" alt="OOS logo">
+        </div>
+        <p class="copyright">© 2017 On One Studios. All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

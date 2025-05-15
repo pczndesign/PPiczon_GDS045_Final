@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OOS_Website</title>
+  <style>
+    /* Font Face Declarations */
+    @font-face {
+      font-family: 'BrandonGrotesque';
+      src: url(Font/Brandon_reg.otf) format('opentype');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'BrandonGrotesque';
+      src: url(Font/Brandon_med.otf) format('opentype');
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'BrandonGrotesque';
+      src: url(Font/Brandon_bld.otf) format('opentype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'BrandonGrotesque';
+      src: url('/fonts/BrandonGrotesque-Italic.otf') format('opentype');
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    /* Base Styles */
+    body {
+      font-family: 'BrandonGrotesque', sans-serif;
+      line-height: 1.6;
+      color: #222;
+      padding: 2rem;
+      background-color: #fafafa;
+    }
+
+    /* Typography */
+    a {
+      text-decoration: none;
+    }
+
+    h1 {
+      font-size: 3rem;         
+      margin-top: 5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 2.2rem;         
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 1.3rem;           
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      font-weight: normal;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      max-width: 100%;
+    }
+
+    /* Navigation */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.1rem 2rem;
+      background-color: #F9F9F9;
+      color: #000;
+    }
+
+    .logo img {
+      max-height: 10vw;
+      width: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 3rem;
+    }
+
+    .nav-links a {
+      font-family: 'BrandonGrotesque', sans-serif;
+      font-weight: 500;
+      text-decoration: none;
+      color: #000;
+      font-size: 20px;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #91292A;
+    }
+
+    /* Hero Section */
+    .hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* About Section */
+    .two-column-section {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+  align-items: flex-start;
+}
+
+.column.image-column {
+  flex: 1;
+}
+
+.column.image-column img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.column.text-column {
+  flex: 2;
+}
+
+
+
+    /* Footer */
+    .site-footer {
+      background-color: #F9F9F9;
+      color: #000;
+      padding: 2rem;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 2000px;
+      margin: 0 auto;
+      gap: 2rem;
+    }
+
+    .footer-column {
+      flex: 1 1 200px;
+    }
+
+    .footer-column h4 {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-family: 'BrandonGrotesque', sans-serif;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-column ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-column ul a {
+      color: #000;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .footer-column ul a:hover {
+      text-decoration: underline;
+      color: #91292A;
+    }
+
+    .footer-branding {
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .footer-branding img {
+      max-height: 100px;
+      width: auto;
+    }
+
+    .copyright {
+      font-size: 0.8rem;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      .nav-links {
+        gap: 1.5rem;
+      }
+      
+      .logo img {
+        height: 150px;
+      }
+      
+      .footer-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-branding {
+        text-align: center;
+        align-items: center;
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="/index.html" class="logo">
+      <img src="IMG/OOSLogo_Black_transparent-1.png" alt="On One Studios Logo">
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="programs.html">Programs</a>
+      <a href="instuctors.html">Instructors</a>
+      <a href="rentals.html">Rentals</a>
+      <a href="about.html">About</a>
+    </div>
+  </nav>
+  
+  <div class="hero">
+    <img src="IMG/Instructors.png" alt="Hero Image">
+  </div>
+
+  <section class="two-column-section">
+    <div class="column image-column">
+      <img src="IMG/ET.png" alt="Erika Totanes">
+    </div>
+    <div class="column text-column">
+      <h2>Erika Totanes</h2>
+      <h4>Hip-Hop Choreography</h4>
+      <p>
+        Dive into the exciting world of Openstyle choreography! This class is all about learning and embodying diverse movement qualities. We'll explore 
+        choreography that blends various urban dance styles like hip hop, popping, breaking, and even elements of jazz, lyrical, and contemporary. 
+      </p>
+      <p>
+        The focus is on understanding musicality, storytelling through movement, and developing your ability to pick up and perform choreography with your 
+        own unique flair.This class focuses on learning, practicing, and executing choreography, drawing from hip hop, popping, breaking, jazz, lyrical, and 
+        contemporary styles to express stories and emotions.      </p>
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="two-column-section">
+    <div class="column image-column">
+      <img src="IMG/EP.png" alt="Erika Totanes">
+    </div>
+    <div class="column text-column">
+      <h2>Eric Pham</h2>
+      <h4>K-Pop Covers</h4>
+      <p>
+        Immerse yourself in the vibrant energy of K-pop! This class is dedicated to learning and performing the iconic dance routines from popular K-pop music 
+        videos. We'll break down the choreography step-by-step, focusing on capturing the sharp, dynamic, and often playful essence of K-pop dances. It's a fun 
+        and energetic way to improve your coordination, memory, and performance skills while dancing to your favorite tunes.      
+      </p>
+    </div>
+  </section>
+  
+  <hr>
+
+  <section class="two-column-section">
+    <div class="column image-column">
+      <img src="IMG/PV.png" alt="Erika Totanes">
+    </div>
+    <div class="column text-column">
+      <h2>Paulina Vo Griffen</h2>
+      <h4>Sensual Heels</h4>
+      <p>
+        Unleash your inner confidence and explore the art of movement in heels. This class focuses on developing a strong foundation in dance technique while 
+        embracing a sensual and feminine style. We'll cover essential elements like balance, posture, and graceful transitions, ensuring healthy alignment and 
+        injury prevention. Learn to move with intention, express yourself fluidly, and discover the empowering feeling of dancing in heels.      
+      </p>
+    </div>
+  </section>
+  
+  <hr>
+
+  <section class="two-column-section">
+    <div class="column image-column">
+      <img src="IMG/MC.png" alt="Erika Totanes">
+    </div>
+    <div class="column text-column">
+      <h2>Monica Chan</h2>
+      <h4>Hip-Hop Choreography</h4>
+      <p>
+        Get ready to groove and elevate your hip hop skills in this dynamic choreography class. You'll learn intricate and challenging hip hop sequences, focusing
+         on foundational movements, musicality, and dynamic shifts. We'll delve into various hip hop subgenres, drawing inspiration from funk, soul, and street 
+         dance to enhance your understanding of rhythm, isolations, and overall body control.      
+        </p>
+      <p>
+        This class is designed to push your boundaries and build your confidence as a hip hop dancer.      
+      </p>
+    </div>
+  </section>
+  
+  <hr>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="instuctors.html">Instructors</a></li>
+          <li><a href="rentals.html">Rentals</a></li>
+          <li><a href="about.html">About</a></li>
+          </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/ononestudios/">Instagram</a></li>
+          <li><a href="https://www.youtube.com/@OnOneStudiosMedia">Youtube</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-column footer-branding">
+        <div class="logo">
+          <img src="IMG/OOSLogo_Black_transparent-1.png" alt="OOS logo">
+        </div>
+        <p class="copyright">© 2017 On One Studios. All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
